@@ -19,4 +19,4 @@ jobs:
               deno-version: lts
               cache: true
          - run: deno run test
-         - run: deno publish
+         - run: deno publish --no-check
