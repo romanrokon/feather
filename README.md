@@ -12,3 +12,5 @@
 
 #### Requires
 NextJS 15+
+
+MIT © romanrokon
