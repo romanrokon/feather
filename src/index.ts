@@ -9,9 +9,11 @@ interface FeatherConfig {
 function getFeather({ baseUrl }: FeatherConfig) {
    const instance = base(baseUrl);
 
-   return <D>(input: Input | string, options?: Init<D>) => {
+   function fetcher<D>(input: Input | string, options?: Init<D>) {
       return feather<D>(input, options, instance);
-   };
+   }
+
+   return fetcher;
 }
 
 export default getFeather;
