@@ -1,0 +1,14 @@
+{
+   "name": "@rz/feather",
+   "version": "0.1.0",
+   "license": "MIT",
+   "tasks": {
+      "dev": "deno run --watch main.ts",
+      "test": "deno test --no-check --allow-net"
+   },
+   "exports": "./src/index.ts",
+   "imports": {
+      "@std/assert": "jsr:@std/assert@^1.0.15",
+      "redaxios": "npm:redaxios@^0.5.1"
+   }
+}
